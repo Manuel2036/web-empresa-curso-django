@@ -1,0 +1,301 @@
+body {
+  font-family: 'Lora';
+  background: linear-gradient(rgba(19, 33, 141, 0), rgba(14, 44, 88, 0)), url("../img/castillo.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway';
+}
+
+p {
+  line-height: 1.75;
+}
+
+.text-faded {
+  color: rgb(255, 254, 254);   /* texto de abajo vive trekking  */
+}
+
+.site-heading {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: 'Raleway';
+}
+
+.site-heading .site-heading-upper {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.site-heading .site-heading-lower {
+  font-size: 5rem;
+  font-weight: 100;
+  line-height: 4rem;
+}
+
+.page-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  padding-bottom:.5rem;
+
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+
+.section-heading .section-heading-under {
+  display: block;
+  font-size: 1rem;
+  text-transform: none;
+  font-weight: 300;
+  margin-top:.5rem;
+}
+
+.bg-faded {
+  background-color: rgba(80, 189, 223, 0.623); /* pagina home cuadrado del texto dejate sorprender */
+}
+
+#mainNav {
+  background-color: rgba(37, 130, 206, 0.582); /* barra superior con los enlaces */
+  font-family: 'Raleway';
+}
+
+#mainNav .navbar-brand { /*  texto vive trekkinng cuando achicas pantalla*/
+  color: #f8f8f8;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link { /* texto de la barra superior con los enlaces */
+  color: rgb(247, 247, 247);
+  font-weight: 800;
+}
+
+#mainNav .navbar-nav .nav-item.active .nav-link { /* barra superior color de los enlaces al pinchar sobre ellos */
+  color: #000303;
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover { 
+    color: rgb(10, 10, 10); /* barra superior color de los enlaces al pasar el mouse sobre ellos */
+  }
+  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+    color: #000000; /* barra superior color de los enlaces al pasar el mouse sobre ellos */
+  }
+}
+
+.btn-xl {
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.intro {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .intro .intro-img {
+    width: 75%;
+    float: right;
+  }
+  .intro .intro-text {
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 45%;
+  }
+}
+
+.cta {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgb(117, 117, 117); /*color de fondo en las categorias */
+}
+
+.cta .cta-inner {
+  position: relative;
+  padding: 3rem;
+  margin: 0.5rem;
+  background-color: rgba(59, 135, 185, 0.719);/* fondo del texto compromiso total en el home y en proximas salida */
+}
+
+.cta .cta-inner:before {
+  border-radius: 0.5rem;
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  border: 0.25rem solid rgba(13, 136, 145, 0); /*  recueadro del compromiso garantizado en el home */
+}
+
+.cta .cta-innerv {
+  position: relative;
+  padding: 3rem;
+  margin: 0.5rem;
+  background-color: rgba(59, 117, 172, 0.808); /* fondo de los cuadrados en el block */
+}
+
+@media (min-width: 992px) {
+  .about-heading .about-heading-img {
+    position: relative;
+    z-index: 0;
+  }
+  .about-heading .about-heading-content {
+    margin-top: -5rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-item .product-item-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -3rem;
+  }
+  .product-item .product-item-img {
+    position: relative;
+    z-index: 0;
+    max-width: 60vw;
+  }
+  .product-item .product-item-description {
+    position: relative;
+    z-index: 1;
+    margin-top: -3rem;
+    max-width: 50vw;
+  }
+}
+
+.list-hours {
+  font-size: 0.9rem;
+}
+
+.list-hours .list-hours-item {
+  border-bottom: 1px solid rgb(7, 0, 0); /*linea en visitanos de proxima salida  */
+  padding-bottom: .25rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.list-hours .list-hours-item.today { /*  */
+  font-weight: bold;
+  color: #c00606;
+}
+
+@media (min-width: 992px) {
+  .list-hours {
+    width: 50%;
+    font-size: 1.1rem;
+  }
+}
+
+.address strong {
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: rgba(94, 93, 93, 0); /* fondo del footer */
+}
+
+.text-primary {
+  color: #f8f8f8 !important; /* TEXTO SUPERIOR VIVE TREKKINK EN EL HOME  */
+}
+
+.bg-primary {
+  background-color: #df1111 !important;/*  */
+} 
+
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(48, 45, 45, 0.979); /* borde inferior del boton visitanos y enviar */
+}
+
+.btn-primary {
+  background-color: #278692ab; /* BOTON VISITANOS EN EL HOME */
+  border-color: #141414d0; /* RECUEADR4O DEL BOTON VISITANOS EN EL HOME  */
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #776c6ca1; /* barra superior color de los enlaces al pasar el mouse sobre ellos */
+  border-color: #b1ada86b; /*  BORDE DEL COLOR AL PASAR EL MOUSE SOBRE EL BOTON VISITANOS EN EL HOME*/
+}
+
+.font-weight-light {
+  font-weight: 100 !important;
+}
+
+.mbtm{
+  padding-top: 5rem;
+}
+
+.mbt{
+  padding-top: 2rem;
+}
+
+.mbt1{
+  padding-top: 1.25rem;
+}
+
+a.link{
+  color: #02020200; /* COLOR ESTATICO DELAS RRSS */
+}
+
+a.link:hover{
+  text-decoration: none;
+  color: #38dada !important;   /*color dinamico de los iconos de RRSS */
+}
+
+.section-content{
+  font-family: 'Lora' !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 28px !important;
+}
+
+ul.errorlist{
+  padding-top: .75rem;
+  font-style: italic;
+  color: red;
+}
